@@ -5,7 +5,7 @@ import { TiSocialFacebook } from 'react-icons/ti';
 
 const Contact = () => {
     return (
-        <div className="hero min-h-screen">
+        <div className="hero">
             <div className="hero-content text-center">
                 <div className="max-w-md">
                     <h1 className="text-6xl font-bold mb-5">Contact Details</h1>

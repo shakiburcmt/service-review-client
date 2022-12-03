@@ -11,13 +11,17 @@ const Services = () => {
     }, [])
     return (
         <div>
-            {
-                limitedServices.map(limitedService => <FoodCard
-                    key={limitedService._id}
-                    limitedService={limitedService}
-                ></FoodCard>)
-            }
-            <Link className='btn btn-outline normal-case' to='/services'>Show All Food Services</Link>
+            <div className='grid lg:grid-cols-3 gap-4'>
+                {
+                    limitedServices.map(limitedService => <FoodCard
+                        key={limitedService._id}
+                        limitedService={limitedService}
+                    ></FoodCard>)
+                }
+            </div>
+            <div className='flex justify-center'>
+                <Link className='btn btn-outline normal-case w-1/2' to='/services'>Show All Food Services</Link>
+            </div>
         </div>
     );
 };
